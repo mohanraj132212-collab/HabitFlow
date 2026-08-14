@@ -1,0 +1,74 @@
+/* HabitFlow Settings & Export Styles */
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.settings-group-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+}
+
+.settings-group-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color-subtle);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border-color-subtle);
+}
+
+.settings-item:last-child {
+  border-bottom: none;
+}
+
+.settings-item-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.settings-item-title {
+  font-weight: 600;
+  font-size: 0.925rem;
+}
+
+.settings-item-desc {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+}
+
+/* Printable PDF View Styling */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .sidebar, .header, .bottom-nav, .habits-toolbar, .btn, .theme-toggle-btn {
+    display: none !important;
+  }
+  .main-wrapper {
+    margin-left: 0 !important;
+  }
+  .content-body {
+    padding: 0 !important;
+  }
+  .habit-spreadsheet-container {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,250 @@
+/* Habit Management & Habit Grid Styles */
+
+.habits-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.habits-search-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-input-wrapper input {
+  padding-left: 2.4rem;
+}
+
+.search-icon-inside {
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  pointer-events: none;
+}
+
+.category-filter-select {
+  width: auto;
+  min-width: 140px;
+}
+
+.habits-grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.habit-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.habit-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-pink-border);
+  box-shadow: var(--shadow-md);
+}
+
+.habit-card-accent-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--primary-pink);
+}
+
+.habit-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.habit-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.habit-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.habit-card-desc {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+.habit-card-badge {
+  font-size: 0.725rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--primary-pink-light);
+  color: var(--primary-pink);
+  font-weight: 600;
+}
+
+.habit-card-metrics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0.6rem 0.8rem;
+  background-color: var(--bg-input);
+  border-radius: var(--border-radius-md);
+  font-size: 0.825rem;
+}
+
+.habit-card-metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habit-card-metric-val {
+  font-weight: 700;
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+.habit-card-metric-lbl {
+  color: var(--text-light);
+  font-size: 0.725rem;
+}
+
+.habit-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color-subtle);
+}
+
+/* Spreadsheet Habit Grid View */
+.habit-spreadsheet-container {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  margin-top: 1.5rem;
+}
+
+.spreadsheet-header-bar {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--bg-card);
+}
+
+.spreadsheet-table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.spreadsheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.spreadsheet-table th,
+.spreadsheet-table td {
+  padding: 0.6rem 0.4rem;
+  border-bottom: 1px solid var(--border-color-subtle);
+  border-right: 1px solid var(--border-color-subtle);
+}
+
+.spreadsheet-table th {
+  background-color: var(--bg-input);
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.775rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.spreadsheet-table th.col-habit,
+.spreadsheet-table td.col-habit {
+  text-align: left;
+  padding-left: 1rem;
+  position: sticky;
+  left: 0;
+  background-color: var(--bg-card);
+  z-index: 5;
+  min-width: 180px;
+  max-width: 220px;
+  font-weight: 600;
+}
+
+.spreadsheet-table th.col-habit {
+  background-color: var(--bg-input);
+  z-index: 15;
+}
+
+.spreadsheet-table td.col-goal {
+  font-weight: 700;
+  color: var(--primary-pink);
+  min-width: 50px;
+}
+
+.grid-day-cell {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--border-radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+  user-select: none;
+  background-color: var(--grid-empty);
+  color: var(--text-muted);
+}
+
+.grid-day-cell:hover {
+  background-color: var(--grid-empty-hover);
+  transform: scale(1.1);
+}
+
+.grid-day-cell.completed {
+  background-color: var(--grid-completed);
+  color: white;
+  box-shadow: 0 2px 6px rgba(255, 79, 154, 0.4);
+}
+
+.grid-day-cell.today-cell {
+  outline: 2px solid var(--primary-pink);
+  outline-offset: -2px;
+}

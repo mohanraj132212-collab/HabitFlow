@@ -1,0 +1,68 @@
+/* HabitFlow Achievements Styles */
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.achievement-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card.locked {
+  opacity: 0.6;
+  filter: grayscale(0.8);
+}
+
+.achievement-card.unlocked {
+  border-color: var(--primary-pink-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.achievement-icon-wrapper {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: var(--primary-pink-light);
+  color: var(--primary-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.achievement-card.locked .achievement-icon-wrapper {
+  background-color: var(--bg-input);
+  color: var(--text-light);
+}
+
+.achievement-info {
+  flex: 1;
+}
+
+.achievement-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.achievement-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.achievement-badge-status {
+  margin-top: 0.4rem;
+}

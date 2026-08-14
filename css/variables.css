@@ -1,0 +1,108 @@
+/* HabitFlow Design System Variables */
+
+:root {
+  /* Color Palette - Light Mode (Default) */
+  --primary-pink: #FF4F9A;
+  --primary-pink-hover: #E03E83;
+  --primary-pink-light: #FFE8F2;
+  --primary-pink-alpha: rgba(255, 79, 154, 0.12);
+  --primary-pink-border: rgba(255, 79, 154, 0.3);
+
+  --bg-main: #FAFAFC;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8F8FC;
+  --bg-sidebar: #FFFFFF;
+  --bg-header: rgba(255, 255, 255, 0.85);
+  --bg-input: #F3F4F8;
+  --bg-modal-overlay: rgba(15, 17, 26, 0.5);
+
+  --text-main: #1C1D24;
+  --text-muted: #6C727F;
+  --text-light: #9CA3AF;
+  --text-on-primary: #FFFFFF;
+
+  --border-color: #E5E7EB;
+  --border-color-subtle: #F3F4F6;
+
+  /* Status colors */
+  --success: #10B981;
+  --success-light: #E6F4EA;
+  --warning: #F59E0B;
+  --warning-light: #FEF3C7;
+  --danger: #EF4444;
+  --danger-light: #FEE2E2;
+  --info: #3B82F6;
+  --info-light: #EFF6FF;
+
+  /* Grid cell states */
+  --grid-completed: #FF4F9A;
+  --grid-completed-hover: #E03E83;
+  --grid-failed: #EF4444;
+  --grid-empty: #F1F3F9;
+  --grid-empty-hover: #E4E7F0;
+  --grid-today-border: #FF4F9A;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-pink: 0 8px 20px -4px rgba(255, 79, 154, 0.35);
+
+  /* Layout Spacing & Sizes */
+  --sidebar-width: 260px;
+  --header-height: 68px;
+  --bottom-nav-height: 64px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 18px;
+  --border-radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  
+  /* Font Family */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Dark Mode Theme */
+[data-theme="dark"] {
+  --primary-pink: #FF4F9A;
+  --primary-pink-hover: #FF6BB0;
+  --primary-pink-light: #3D1E2D;
+  --primary-pink-alpha: rgba(255, 79, 154, 0.2);
+  --primary-pink-border: rgba(255, 79, 154, 0.4);
+
+  --bg-main: #0F0F14;
+  --bg-card: #171720;
+  --bg-card-hover: #1F1F2C;
+  --bg-sidebar: #14141D;
+  --bg-header: rgba(23, 23, 32, 0.85);
+  --bg-input: #21212E;
+  --bg-modal-overlay: rgba(0, 0, 0, 0.7);
+
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
+  --text-light: #6B7280;
+  --text-on-primary: #FFFFFF;
+
+  --border-color: #272736;
+  --border-color-subtle: #1F1F2B;
+
+  --success-light: #064E3B;
+  --warning-light: #78350F;
+  --danger-light: #7F1D1D;
+  --info-light: #1E3A8A;
+
+  --grid-completed: #FF4F9A;
+  --grid-completed-hover: #FF6BB0;
+  --grid-failed: #DC2626;
+  --grid-empty: #222230;
+  --grid-empty-hover: #2D2D3F;
+  --grid-today-border: #FF4F9A;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-pink: 0 8px 24px -4px rgba(255, 79, 154, 0.45);
+}

@@ -1,0 +1,108 @@
+/* HabitFlow Goals Section Styles */
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.goal-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-fast);
+}
+
+.goal-card:hover {
+  border-color: var(--primary-pink-border);
+  transform: translateY(-2px);
+}
+
+.goal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.goal-title-group h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.goal-target-text {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+.goal-progress-section {
+  margin: 1rem 0;
+}
+
+.goal-stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.goal-percentage {
+  color: var(--primary-pink);
+  font-size: 1rem;
+}
+
+/* Mood & Energy Styles */
+.mood-tracker-card,
+.screentime-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mood-options-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.mood-option-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-input);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mood-option-btn:hover,
+.mood-option-btn.selected {
+  border-color: var(--primary-pink);
+  background-color: var(--primary-pink-light);
+  color: var(--primary-pink);
+}
+
+.energy-slider-container {
+  margin: 1.25rem 0;
+}
+
+.energy-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
