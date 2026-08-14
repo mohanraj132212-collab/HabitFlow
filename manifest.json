@@ -1,0 +1,16 @@
+{
+  "name": "HabitFlow – Smart Habit Tracker",
+  "short_name": "HabitFlow",
+  "description": "Complete, modern, responsive habit tracking application with goals, calendar, analytics, mood, and journaling.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAFAFC",
+  "theme_color": "#FF4F9A",
+  "icons": [
+    {
+      "src": "./assets/logo/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
